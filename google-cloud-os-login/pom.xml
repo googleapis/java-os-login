@@ -66,6 +66,14 @@
       <groupId>com.google.cloud</groupId>
       <artifactId>google-cloud-core</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.auth</groupId>
+      <artifactId>google-auth-library-oauth2-http</artifactId>
+    </dependency>
 
     <!-- Test dependencies -->
     <dependency>

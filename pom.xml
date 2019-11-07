@@ -74,6 +74,7 @@
     <threeten.version>1.4.0</threeten.version>
     <javax.annotations.version>1.3.2</javax.annotations.version>
     <animal-sniffer.version>1.18</animal-sniffer.version>
+    <google.auth.version>0.18.0</google.auth.version>
   </properties>
 
   <dependencyManagement>
@@ -119,6 +120,13 @@
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-core-bom</artifactId>
         <version>1.91.3</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.auth</groupId>
+        <artifactId>google-auth-library-bom</artifactId>
+        <version>${google.auth.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
