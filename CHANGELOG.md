@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.117.2](https://www.github.com/googleapis/java-os-login/compare/v0.117.1...v0.117.2) (2020-01-15)
+
+
+### Dependencies
+
+* update dependency org.threeten:threetenbp to v1.4.1 ([2e2c909](https://www.github.com/googleapis/java-os-login/commit/2e2c909fd72bfa5319068b0ee90bd3f312fdb031))
+
 ### [0.117.1](https://www.github.com/googleapis/java-os-login/compare/v0.117.0...v0.117.1) (2020-01-07)
 
 
