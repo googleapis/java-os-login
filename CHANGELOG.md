@@ -1,5 +1,20 @@
 # Changelog
 
+### [0.118.2](https://www.github.com/googleapis/java-os-login/compare/v0.118.1...v0.118.2) (2020-02-25)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-core-bom to v1.92.5 ([a6631a7](https://www.github.com/googleapis/java-os-login/commit/a6631a7717e3218b2db2bd7fe8c539b17d8f9940))
+* update dependency com.google.protobuf:protobuf-java to v3.11.4 ([2f2ed9c](https://www.github.com/googleapis/java-os-login/commit/2f2ed9ce71caed7970b17fd1bee62e5fb8301be3))
+* update dependency com.google.protobuf:protobuf-java-util to v3.11.4 ([#72](https://www.github.com/googleapis/java-os-login/issues/72)) ([2beb2ee](https://www.github.com/googleapis/java-os-login/commit/2beb2eece1f08b77e2cde72b65ecf81a9bf243aa))
+* update dependency io.grpc:grpc-bom to v1.27.1 ([cddd998](https://www.github.com/googleapis/java-os-login/commit/cddd9987d801e4cb0011c988fe7ebe826dce2bab))
+
+
+### Documentation
+
+* **regen:** update sample code to set total timeout, add API client header test ([a01d8c0](https://www.github.com/googleapis/java-os-login/commit/a01d8c0616edb89eb1017cc3711b8f306a8e3b65))
+
 ### [0.118.1](https://www.github.com/googleapis/java-os-login/compare/v0.118.0...v0.118.1) (2020-02-04)
 
 
