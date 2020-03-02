@@ -3,4 +3,4 @@
 
 proto-google-cloud-os-login-v1:0.84.0:0.84.0
 grpc-google-cloud-os-login-v1:0.84.0:0.84.0
-google-cloud-os-login:0.119.0:0.119.0
+google-cloud-os-login:1.0.0:1.0.0

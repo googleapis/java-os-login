@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-os-login-bom</artifactId>
-  <version>0.119.0</version><!-- {x-version-update:google-cloud-os-login:current} -->
+  <version>1.0.0</version><!-- {x-version-update:google-cloud-os-login:current} -->
   <packaging>pom</packaging>
   <parent>
     <groupId>com.google.cloud</groupId>
@@ -74,7 +74,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-os-login</artifactId>
-        <version>0.119.0</version><!-- {x-version-update:google-cloud-os-login:current} -->
+        <version>1.0.0</version><!-- {x-version-update:google-cloud-os-login:current} -->
       </dependency>
     </dependencies>
   </dependencyManagement>
