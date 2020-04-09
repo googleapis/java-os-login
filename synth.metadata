@@ -1,6 +1,13 @@
 {
-  "updateTime": "2020-04-07T00:07:16.962058Z",
+  "updateTime": "2020-04-09T01:54:25.954553Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/java-os-login.git",
+        "sha": "3b50353358f51d373b2241b9ac20d5f1e2484772"
+      }
+    },
     {
       "git": {
         "name": "googleapis",
