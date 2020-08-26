@@ -4,22 +4,22 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-os-login.git",
-        "sha": "cc8b1940e576691ed73ee49e8106df8f049c9d91"
+        "sha": "f3be40b3266190b1ea1ea5c17096245c85cd6438"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "91b7e0e581f4a74852ac1af7cfa693c88aa2bef3",
-        "internalRef": "315988875"
+        "sha": "079e09a64813291f71759d0e1b5f14b0794dc345",
+        "internalRef": "328188122"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "9602086c6c5b05db77950c7f7495a2a3868f3537"
+        "sha": "968465a1cad496e1292ef4584a054a35f756ff94"
       }
     }
   ],
