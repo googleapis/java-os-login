@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/java-os-login.git",
+        "sha": "6633d6a5a88ddc781563c8ab38c81cf2724138c5"
+      }
+    },
+    {
+      "git": {
+        "name": "synthtool",
+        "remote": "https://github.com/googleapis/synthtool.git",
+        "sha": "487eba79f8260e34205d8ceb1ebcc65685085e19"
+      }
+    }
+  ]
+}
