@@ -4,15 +4,15 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-os-login.git",
-        "sha": "dc9aca3c6c90e97ea116d5b90f023bfac6eef0b7"
+        "sha": "c69d43dfc9d2141035b6539e188e7eb3d6c8b245"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "079e09a64813291f71759d0e1b5f14b0794dc345",
-        "internalRef": "328188122"
+        "sha": "b11a87f3b54be3a5e42c15020ee1e0781f86da90",
+        "internalRef": "344134135"
       }
     },
     {
