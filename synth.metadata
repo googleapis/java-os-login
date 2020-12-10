@@ -11,8 +11,8 @@
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "b11a87f3b54be3a5e42c15020ee1e0781f86da90",
-        "internalRef": "344134135"
+        "sha": "ff715bf31a53a32d0901564f0a277ea25ed1b628",
+        "internalRef": "344845744"
       }
     },
     {
@@ -133,11 +133,8 @@
     "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/LoginProfile.java",
     "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/LoginProfileOrBuilder.java",
     "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/OsLoginProto.java",
-    "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/PosixAccountName.java",
-    "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/SshPublicKeyName.java",
     "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/UpdateSshPublicKeyRequest.java",
     "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/UpdateSshPublicKeyRequestOrBuilder.java",
-    "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/UserName.java",
     "proto-google-cloud-os-login-v1/src/main/proto/google/cloud/oslogin/common/common.proto",
     "proto-google-cloud-os-login-v1/src/main/proto/google/cloud/oslogin/v1/oslogin.proto",
     "renovate.json",
