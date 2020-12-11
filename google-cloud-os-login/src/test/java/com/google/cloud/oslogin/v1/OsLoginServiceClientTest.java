@@ -461,7 +461,7 @@ public class OsLoginServiceClientTest {
 
     UserName parent = UserName.of("[USER]");
     OsLoginProto.SshPublicKey sshPublicKey = OsLoginProto.SshPublicKey.newBuilder().build();
-    String projectId = "project_id-1969970175";
+    String projectId = "projectId-894832108";
 
     ImportSshPublicKeyResponse actualResponse =
         client.importSshPublicKey(parent, sshPublicKey, projectId);
@@ -488,7 +488,7 @@ public class OsLoginServiceClientTest {
     try {
       UserName parent = UserName.of("[USER]");
       OsLoginProto.SshPublicKey sshPublicKey = OsLoginProto.SshPublicKey.newBuilder().build();
-      String projectId = "project_id-1969970175";
+      String projectId = "projectId-894832108";
       client.importSshPublicKey(parent, sshPublicKey, projectId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
@@ -506,7 +506,7 @@ public class OsLoginServiceClientTest {
 
     String parent = "parent-995424086";
     OsLoginProto.SshPublicKey sshPublicKey = OsLoginProto.SshPublicKey.newBuilder().build();
-    String projectId = "project_id-1969970175";
+    String projectId = "projectId-894832108";
 
     ImportSshPublicKeyResponse actualResponse =
         client.importSshPublicKey(parent, sshPublicKey, projectId);
@@ -533,7 +533,7 @@ public class OsLoginServiceClientTest {
     try {
       String parent = "parent-995424086";
       OsLoginProto.SshPublicKey sshPublicKey = OsLoginProto.SshPublicKey.newBuilder().build();
-      String projectId = "project_id-1969970175";
+      String projectId = "projectId-894832108";
       client.importSshPublicKey(parent, sshPublicKey, projectId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
