@@ -91,7 +91,7 @@ public class SshPublicKeyName implements ResourceName {
   public static List<String> toStringList(List<SshPublicKeyName> values) {
     List<String> list = new ArrayList<>(values.size());
     for (SshPublicKeyName value : values) {
-      if (Objects.isNull(value)) {
+      if (value == null) {
         list.add("");
       } else {
         list.add(value.toString());
@@ -106,14 +106,14 @@ public class SshPublicKeyName implements ResourceName {
 
   @Override
   public Map<String, String> getFieldValuesMap() {
-    if (Objects.isNull(fieldValuesMap)) {
+    if (fieldValuesMap == null) {
       synchronized (this) {
-        if (Objects.isNull(fieldValuesMap)) {
+        if (fieldValuesMap == null) {
           ImmutableMap.Builder<String, String> fieldMapBuilder = ImmutableMap.builder();
-          if (!Objects.isNull(user)) {
+          if (user != null) {
             fieldMapBuilder.put("user", user);
           }
-          if (!Objects.isNull(fingerprint)) {
+          if (fingerprint != null) {
             fieldMapBuilder.put("fingerprint", fingerprint);
           }
           fieldValuesMap = fieldMapBuilder.build();

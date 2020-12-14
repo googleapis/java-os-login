@@ -28,7 +28,6 @@ import com.google.cloud.oslogin.v1.stub.OsLoginServiceStubSettings;
 import com.google.protobuf.Empty;
 import com.google.protobuf.FieldMask;
 import java.io.IOException;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Generated;
 
@@ -154,7 +153,7 @@ public class OsLoginServiceClient implements BackgroundResource {
   public final void deletePosixAccount(ProjectName name) {
     DeletePosixAccountRequest request =
         DeletePosixAccountRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     deletePosixAccount(request);
   }
@@ -207,7 +206,7 @@ public class OsLoginServiceClient implements BackgroundResource {
   public final void deleteSshPublicKey(FingerprintName name) {
     DeleteSshPublicKeyRequest request =
         DeleteSshPublicKeyRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     deleteSshPublicKey(request);
   }
@@ -258,9 +257,7 @@ public class OsLoginServiceClient implements BackgroundResource {
    */
   public final LoginProfile getLoginProfile(UserName name) {
     GetLoginProfileRequest request =
-        GetLoginProfileRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetLoginProfileRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getLoginProfile(request);
   }
 
@@ -311,9 +308,7 @@ public class OsLoginServiceClient implements BackgroundResource {
    */
   public final OsLoginProto.SshPublicKey getSshPublicKey(FingerprintName name) {
     GetSshPublicKeyRequest request =
-        GetSshPublicKeyRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetSshPublicKeyRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getSshPublicKey(request);
   }
 
@@ -366,7 +361,7 @@ public class OsLoginServiceClient implements BackgroundResource {
       UserName parent, OsLoginProto.SshPublicKey sshPublicKey) {
     ImportSshPublicKeyRequest request =
         ImportSshPublicKeyRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setSshPublicKey(sshPublicKey)
             .build();
     return importSshPublicKey(request);
@@ -405,7 +400,7 @@ public class OsLoginServiceClient implements BackgroundResource {
       UserName parent, OsLoginProto.SshPublicKey sshPublicKey, String projectId) {
     ImportSshPublicKeyRequest request =
         ImportSshPublicKeyRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setSshPublicKey(sshPublicKey)
             .setProjectId(projectId)
             .build();
@@ -472,7 +467,7 @@ public class OsLoginServiceClient implements BackgroundResource {
       FingerprintName name, OsLoginProto.SshPublicKey sshPublicKey) {
     UpdateSshPublicKeyRequest request =
         UpdateSshPublicKeyRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .setSshPublicKey(sshPublicKey)
             .build();
     return updateSshPublicKey(request);
@@ -512,7 +507,7 @@ public class OsLoginServiceClient implements BackgroundResource {
       FingerprintName name, OsLoginProto.SshPublicKey sshPublicKey, FieldMask updateMask) {
     UpdateSshPublicKeyRequest request =
         UpdateSshPublicKeyRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .setSshPublicKey(sshPublicKey)
             .setUpdateMask(updateMask)
             .build();
