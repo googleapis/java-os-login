@@ -354,7 +354,7 @@ public class OsLoginServiceClient implements BackgroundResource {
    * is set when no username and UID exist as part of the login profile.
    *
    * @param parent Required. The unique ID for the user in format `users/{user}`.
-   * @param ssh_public_key Optional. The SSH public key and expiration time.
+   * @param sshPublicKey Optional. The SSH public key and expiration time.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ImportSshPublicKeyResponse importSshPublicKey(
@@ -373,7 +373,7 @@ public class OsLoginServiceClient implements BackgroundResource {
    * is set when no username and UID exist as part of the login profile.
    *
    * @param parent Required. The unique ID for the user in format `users/{user}`.
-   * @param ssh_public_key Optional. The SSH public key and expiration time.
+   * @param sshPublicKey Optional. The SSH public key and expiration time.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ImportSshPublicKeyResponse importSshPublicKey(
@@ -392,8 +392,8 @@ public class OsLoginServiceClient implements BackgroundResource {
    * is set when no username and UID exist as part of the login profile.
    *
    * @param parent Required. The unique ID for the user in format `users/{user}`.
-   * @param ssh_public_key Optional. The SSH public key and expiration time.
-   * @param project_id The project ID of the Google Cloud Platform project.
+   * @param sshPublicKey Optional. The SSH public key and expiration time.
+   * @param projectId The project ID of the Google Cloud Platform project.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ImportSshPublicKeyResponse importSshPublicKey(
@@ -413,8 +413,8 @@ public class OsLoginServiceClient implements BackgroundResource {
    * is set when no username and UID exist as part of the login profile.
    *
    * @param parent Required. The unique ID for the user in format `users/{user}`.
-   * @param ssh_public_key Optional. The SSH public key and expiration time.
-   * @param project_id The project ID of the Google Cloud Platform project.
+   * @param sshPublicKey Optional. The SSH public key and expiration time.
+   * @param projectId The project ID of the Google Cloud Platform project.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ImportSshPublicKeyResponse importSshPublicKey(
@@ -460,7 +460,7 @@ public class OsLoginServiceClient implements BackgroundResource {
    * @param name Required. The fingerprint of the public key to update. Public keys are identified
    *     by their SHA-256 fingerprint. The fingerprint of the public key is in format
    *     `users/{user}/sshPublicKeys/{fingerprint}`.
-   * @param ssh_public_key Required. The SSH public key and expiration time.
+   * @param sshPublicKey Required. The SSH public key and expiration time.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OsLoginProto.SshPublicKey updateSshPublicKey(
@@ -481,7 +481,7 @@ public class OsLoginServiceClient implements BackgroundResource {
    * @param name Required. The fingerprint of the public key to update. Public keys are identified
    *     by their SHA-256 fingerprint. The fingerprint of the public key is in format
    *     `users/{user}/sshPublicKeys/{fingerprint}`.
-   * @param ssh_public_key Required. The SSH public key and expiration time.
+   * @param sshPublicKey Required. The SSH public key and expiration time.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OsLoginProto.SshPublicKey updateSshPublicKey(
@@ -499,8 +499,8 @@ public class OsLoginServiceClient implements BackgroundResource {
    * @param name Required. The fingerprint of the public key to update. Public keys are identified
    *     by their SHA-256 fingerprint. The fingerprint of the public key is in format
    *     `users/{user}/sshPublicKeys/{fingerprint}`.
-   * @param ssh_public_key Required. The SSH public key and expiration time.
-   * @param update_mask Mask to control which fields get updated. Updates all if not present.
+   * @param sshPublicKey Required. The SSH public key and expiration time.
+   * @param updateMask Mask to control which fields get updated. Updates all if not present.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OsLoginProto.SshPublicKey updateSshPublicKey(
@@ -522,8 +522,8 @@ public class OsLoginServiceClient implements BackgroundResource {
    * @param name Required. The fingerprint of the public key to update. Public keys are identified
    *     by their SHA-256 fingerprint. The fingerprint of the public key is in format
    *     `users/{user}/sshPublicKeys/{fingerprint}`.
-   * @param ssh_public_key Required. The SSH public key and expiration time.
-   * @param update_mask Mask to control which fields get updated. Updates all if not present.
+   * @param sshPublicKey Required. The SSH public key and expiration time.
+   * @param updateMask Mask to control which fields get updated. Updates all if not present.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OsLoginProto.SshPublicKey updateSshPublicKey(
