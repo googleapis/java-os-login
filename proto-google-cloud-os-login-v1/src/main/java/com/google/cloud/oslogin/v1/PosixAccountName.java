@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.cloud.oslogin.common;
+package com.google.cloud.oslogin.v1;
 
 import com.google.api.pathtemplate.PathTemplate;
 import com.google.api.resourcenames.ResourceName;

@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      https://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -15,9 +15,11 @@
  */
 
 /**
- * The interfaces provided are listed below, along with usage samples.
+ * A client to Cloud OS Login API.
  *
- * <p>======================= OsLoginServiceClient =======================
+ * <p>The interfaces provided are listed below, along with usage samples.
+ *
+ * <p>==================== OsLoginServiceClient ====================
  *
  * <p>Service Description: Cloud OS Login API
  *
@@ -25,8 +27,17 @@
  * logging into virtual machines on Google Cloud Platform.
  *
  * <p>Sample for OsLoginServiceClient:
+ *
+ * <pre>
+ * <code>
+ * try (OsLoginServiceClient osLoginServiceClient = OsLoginServiceClient.create()) {
+ *   PosixAccountName name = PosixAccountName.of("[USER]", "[PROJECT]");
+ *   osLoginServiceClient.deletePosixAccount(name);
+ * }
+ * </code>
+ * </pre>
  */
-@Generated("by gapic-generator-java")
+@Generated("by gapic-generator")
 package com.google.cloud.oslogin.v1;
 
 import javax.annotation.Generated;

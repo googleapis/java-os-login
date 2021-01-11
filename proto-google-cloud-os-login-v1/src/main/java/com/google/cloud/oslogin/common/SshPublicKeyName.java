@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      https://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -23,28 +23,18 @@ import com.google.common.collect.ImmutableMap;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
-import javax.annotation.Generated;
 
-// AUTO-GENERATED DOCUMENTATION AND CLASS.
-@Generated("by gapic-generator-java")
+/** AUTO-GENERATED DOCUMENTATION AND CLASS */
+@javax.annotation.Generated("by GAPIC protoc plugin")
 public class SshPublicKeyName implements ResourceName {
-  private static final PathTemplate USER_FINGERPRINT =
+
+  private static final PathTemplate PATH_TEMPLATE =
       PathTemplate.createWithoutUrlEncoding("users/{user}/sshPublicKeys/{fingerprint}");
+
   private volatile Map<String, String> fieldValuesMap;
+
   private final String user;
   private final String fingerprint;
-
-  @Deprecated
-  protected SshPublicKeyName() {
-    user = null;
-    fingerprint = null;
-  }
-
-  private SshPublicKeyName(Builder builder) {
-    user = Preconditions.checkNotNull(builder.getUser());
-    fingerprint = Preconditions.checkNotNull(builder.getFingerprint());
-  }
 
   public String getUser() {
     return user;
@@ -62,6 +52,11 @@ public class SshPublicKeyName implements ResourceName {
     return new Builder(this);
   }
 
+  private SshPublicKeyName(Builder builder) {
+    user = Preconditions.checkNotNull(builder.getUser());
+    fingerprint = Preconditions.checkNotNull(builder.getFingerprint());
+  }
+
   public static SshPublicKeyName of(String user, String fingerprint) {
     return newBuilder().setUser(user).setFingerprint(fingerprint).build();
   }
@@ -75,7 +70,7 @@ public class SshPublicKeyName implements ResourceName {
       return null;
     }
     Map<String, String> matchMap =
-        USER_FINGERPRINT.validatedMatch(
+        PATH_TEMPLATE.validatedMatch(
             formattedString, "SshPublicKeyName.parse: formattedString not in valid format");
     return of(matchMap.get("user"), matchMap.get("fingerprint"));
   }
@@ -89,7 +84,7 @@ public class SshPublicKeyName implements ResourceName {
   }
 
   public static List<String> toStringList(List<SshPublicKeyName> values) {
-    List<String> list = new ArrayList<>(values.size());
+    List<String> list = new ArrayList<String>(values.size());
     for (SshPublicKeyName value : values) {
       if (value == null) {
         list.add("");
@@ -101,21 +96,16 @@ public class SshPublicKeyName implements ResourceName {
   }
 
   public static boolean isParsableFrom(String formattedString) {
-    return USER_FINGERPRINT.matches(formattedString);
+    return PATH_TEMPLATE.matches(formattedString);
   }
 
-  @Override
   public Map<String, String> getFieldValuesMap() {
     if (fieldValuesMap == null) {
       synchronized (this) {
         if (fieldValuesMap == null) {
           ImmutableMap.Builder<String, String> fieldMapBuilder = ImmutableMap.builder();
-          if (user != null) {
-            fieldMapBuilder.put("user", user);
-          }
-          if (fingerprint != null) {
-            fieldMapBuilder.put("fingerprint", fingerprint);
-          }
+          fieldMapBuilder.put("user", user);
+          fieldMapBuilder.put("fingerprint", fingerprint);
           fieldValuesMap = fieldMapBuilder.build();
         }
       }
@@ -129,38 +119,14 @@ public class SshPublicKeyName implements ResourceName {
 
   @Override
   public String toString() {
-    return USER_FINGERPRINT.instantiate("user", user, "fingerprint", fingerprint);
+    return PATH_TEMPLATE.instantiate("user", user, "fingerprint", fingerprint);
   }
 
-  @Override
-  public boolean equals(Object o) {
-    if (o == this) {
-      return true;
-    }
-    if (o != null || getClass() == o.getClass()) {
-      SshPublicKeyName that = ((SshPublicKeyName) o);
-      return Objects.equals(this.user, that.user)
-          && Objects.equals(this.fingerprint, that.fingerprint);
-    }
-    return false;
-  }
-
-  @Override
-  public int hashCode() {
-    int h = 1;
-    h *= 1000003;
-    h ^= Objects.hashCode(user);
-    h *= 1000003;
-    h ^= Objects.hashCode(fingerprint);
-    return h;
-  }
-
-  /** Builder for users/{user}/sshPublicKeys/{fingerprint}. */
+  /** Builder for SshPublicKeyName. */
   public static class Builder {
+
     private String user;
     private String fingerprint;
-
-    protected Builder() {}
 
     public String getUser() {
       return user;
@@ -180,6 +146,8 @@ public class SshPublicKeyName implements ResourceName {
       return this;
     }
 
+    private Builder() {}
+
     private Builder(SshPublicKeyName sshPublicKeyName) {
       user = sshPublicKeyName.user;
       fingerprint = sshPublicKeyName.fingerprint;
@@ -188,5 +156,27 @@ public class SshPublicKeyName implements ResourceName {
     public SshPublicKeyName build() {
       return new SshPublicKeyName(this);
     }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (o == this) {
+      return true;
+    }
+    if (o instanceof SshPublicKeyName) {
+      SshPublicKeyName that = (SshPublicKeyName) o;
+      return (this.user.equals(that.user)) && (this.fingerprint.equals(that.fingerprint));
+    }
+    return false;
+  }
+
+  @Override
+  public int hashCode() {
+    int h = 1;
+    h *= 1000003;
+    h ^= user.hashCode();
+    h *= 1000003;
+    h ^= fingerprint.hashCode();
+    return h;
   }
 }
