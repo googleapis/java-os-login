@@ -24,7 +24,6 @@ import com.google.api.gax.grpc.testing.MockServiceHelper;
 import com.google.api.gax.rpc.ApiClientHeaderProvider;
 import com.google.api.gax.rpc.InvalidArgumentException;
 import com.google.cloud.oslogin.common.OsLoginProto;
-import com.google.cloud.oslogin.common.ProjectName;
 import com.google.protobuf.AbstractMessage;
 import com.google.protobuf.Empty;
 import com.google.protobuf.FieldMask;

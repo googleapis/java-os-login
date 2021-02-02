@@ -49,6 +49,9 @@ for version in versions:
   s.replace('**/OsLoginServiceClient.java',
             'import com.google.cloud.oslogin.common.UserName;',
             'import com.google.cloud.oslogin.v1.UserName;')
+  s.replace('**/OsLoginServiceClient.java',
+            'import com.google.cloud.oslogin.common.ProjectName;',
+            'import com.google.cloud.oslogin.v1.ProjectName;')
   s.replace('**/OsLoginServiceClientTest.java', 'PosixAccountName',
             'ProjectName')
   s.replace('**/OsLoginServiceClientTest.java', 'SshPublicKeyName',
@@ -59,6 +62,9 @@ for version in versions:
   s.replace('**/OsLoginServiceClientTest.java',
             'import com.google.cloud.oslogin.common.UserName;',
             'import com.google.cloud.oslogin.v1.UserName;')
+  s.replace('**/OsLoginServiceClientTest.java',
+            'import com.google.cloud.oslogin.common.ProjectName;',
+            'import com.google.cloud.oslogin.v1.ProjectName;')
 
   java.format_code(f'google-cloud-os-login/src')
   java.format_code(f'grpc-google-cloud-{service}-{version}/src')

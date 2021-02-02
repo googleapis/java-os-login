@@ -27,7 +27,6 @@ import java.util.Objects;
 import javax.annotation.Generated;
 
 // AUTO-GENERATED DOCUMENTATION AND CLASS.
-// This will be removed  during next major release
 @Generated("by gapic-generator-java")
 public class UserName implements ResourceName {
   private static final PathTemplate USER = PathTemplate.createWithoutUrlEncoding("users/{user}");
