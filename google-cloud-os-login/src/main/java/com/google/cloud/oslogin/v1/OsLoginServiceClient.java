@@ -21,8 +21,6 @@ import com.google.api.gax.core.BackgroundResource;
 import com.google.api.gax.rpc.UnaryCallable;
 import com.google.cloud.oslogin.common.OsLoginProto;
 import com.google.cloud.oslogin.common.ProjectName;
-import com.google.cloud.oslogin.v1.FingerprintName;
-import com.google.cloud.oslogin.v1.UserName;
 import com.google.cloud.oslogin.v1.stub.OsLoginServiceStub;
 import com.google.cloud.oslogin.v1.stub.OsLoginServiceStubSettings;
 import com.google.protobuf.Empty;

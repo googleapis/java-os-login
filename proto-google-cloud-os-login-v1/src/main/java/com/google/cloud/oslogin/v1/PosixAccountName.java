@@ -29,22 +29,30 @@ import javax.annotation.Generated;
 // AUTO-GENERATED DOCUMENTATION AND CLASS.
 // This will be removed  during next major release
 @Generated("by gapic-generator-java")
-public class UserName implements ResourceName {
-  private static final PathTemplate USER = PathTemplate.createWithoutUrlEncoding("users/{user}");
+public class PosixAccountName implements ResourceName {
+  private static final PathTemplate USER_PROJECT =
+      PathTemplate.createWithoutUrlEncoding("users/{user}/projects/{project}");
   private volatile Map<String, String> fieldValuesMap;
   private final String user;
+  private final String project;
 
   @Deprecated
-  protected UserName() {
+  protected PosixAccountName() {
     user = null;
+    project = null;
   }
 
-  private UserName(Builder builder) {
+  private PosixAccountName(Builder builder) {
     user = Preconditions.checkNotNull(builder.getUser());
+    project = Preconditions.checkNotNull(builder.getProject());
   }
 
   public String getUser() {
     return user;
+  }
+
+  public String getProject() {
+    return project;
   }
 
   public static Builder newBuilder() {
@@ -55,34 +63,35 @@ public class UserName implements ResourceName {
     return new Builder(this);
   }
 
-  public static UserName of(String user) {
-    return newBuilder().setUser(user).build();
+  public static PosixAccountName of(String user, String project) {
+    return newBuilder().setUser(user).setProject(project).build();
   }
 
-  public static String format(String user) {
-    return newBuilder().setUser(user).build().toString();
+  public static String format(String user, String project) {
+    return newBuilder().setUser(user).setProject(project).build().toString();
   }
 
-  public static UserName parse(String formattedString) {
+  public static PosixAccountName parse(String formattedString) {
     if (formattedString.isEmpty()) {
       return null;
     }
     Map<String, String> matchMap =
-        USER.validatedMatch(formattedString, "UserName.parse: formattedString not in valid format");
-    return of(matchMap.get("user"));
+        USER_PROJECT.validatedMatch(
+            formattedString, "PosixAccountName.parse: formattedString not in valid format");
+    return of(matchMap.get("user"), matchMap.get("project"));
   }
 
-  public static List<UserName> parseList(List<String> formattedStrings) {
-    List<UserName> list = new ArrayList<>(formattedStrings.size());
+  public static List<PosixAccountName> parseList(List<String> formattedStrings) {
+    List<PosixAccountName> list = new ArrayList<>(formattedStrings.size());
     for (String formattedString : formattedStrings) {
       list.add(parse(formattedString));
     }
     return list;
   }
 
-  public static List<String> toStringList(List<UserName> values) {
+  public static List<String> toStringList(List<PosixAccountName> values) {
     List<String> list = new ArrayList<>(values.size());
-    for (UserName value : values) {
+    for (PosixAccountName value : values) {
       if (value == null) {
         list.add("");
       } else {
@@ -93,7 +102,7 @@ public class UserName implements ResourceName {
   }
 
   public static boolean isParsableFrom(String formattedString) {
-    return USER.matches(formattedString);
+    return USER_PROJECT.matches(formattedString);
   }
 
   @Override
@@ -104,6 +113,9 @@ public class UserName implements ResourceName {
           ImmutableMap.Builder<String, String> fieldMapBuilder = ImmutableMap.builder();
           if (user != null) {
             fieldMapBuilder.put("user", user);
+          }
+          if (project != null) {
+            fieldMapBuilder.put("project", project);
           }
           fieldValuesMap = fieldMapBuilder.build();
         }
@@ -118,7 +130,7 @@ public class UserName implements ResourceName {
 
   @Override
   public String toString() {
-    return USER.instantiate("user", user);
+    return USER_PROJECT.instantiate("user", user, "project", project);
   }
 
   @Override
@@ -127,8 +139,8 @@ public class UserName implements ResourceName {
       return true;
     }
     if (o != null || getClass() == o.getClass()) {
-      UserName that = ((UserName) o);
-      return Objects.equals(this.user, that.user);
+      PosixAccountName that = ((PosixAccountName) o);
+      return Objects.equals(this.user, that.user) && Objects.equals(this.project, that.project);
     }
     return false;
   }
@@ -138,12 +150,15 @@ public class UserName implements ResourceName {
     int h = 1;
     h *= 1000003;
     h ^= Objects.hashCode(user);
+    h *= 1000003;
+    h ^= Objects.hashCode(project);
     return h;
   }
 
-  /** Builder for users/{user}. */
+  /** Builder for users/{user}/projects/{project}. */
   public static class Builder {
     private String user;
+    private String project;
 
     protected Builder() {}
 
@@ -151,17 +166,27 @@ public class UserName implements ResourceName {
       return user;
     }
 
+    public String getProject() {
+      return project;
+    }
+
     public Builder setUser(String user) {
       this.user = user;
       return this;
     }
 
-    private Builder(UserName userName) {
-      user = userName.user;
+    public Builder setProject(String project) {
+      this.project = project;
+      return this;
     }
 
-    public UserName build() {
-      return new UserName(this);
+    private Builder(PosixAccountName posixAccountName) {
+      user = posixAccountName.user;
+      project = posixAccountName.project;
+    }
+
+    public PosixAccountName build() {
+      return new PosixAccountName(this);
     }
   }
 }

@@ -13,6 +13,8 @@
 # limitations under the License.
 
 """This script is used to synthesize generated parts of this library."""
+# Copy of Resource name helper classes from v1 and import replacements
+# will be removed before next major release
 
 import synthtool as s
 import synthtool.languages.java as java
@@ -58,7 +60,7 @@ for version in versions:
             'import com.google.cloud.oslogin.common.UserName;',
             'import com.google.cloud.oslogin.v1.UserName;')
 
-  java.format_code(f'google-cloud-{service}/src')
+  java.format_code(f'google-cloud-os-login/src')
   java.format_code(f'grpc-google-cloud-{service}-{version}/src')
   java.format_code(f'proto-google-cloud-{service}-{version}/src')
 
