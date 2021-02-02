@@ -21,8 +21,8 @@ import com.google.api.gax.core.BackgroundResource;
 import com.google.api.gax.rpc.UnaryCallable;
 import com.google.cloud.oslogin.common.OsLoginProto;
 import com.google.cloud.oslogin.common.ProjectName;
-import com.google.cloud.oslogin.common.FingerprintName;
-import com.google.cloud.oslogin.common.UserName;
+import com.google.cloud.oslogin.v1.FingerprintName;
+import com.google.cloud.oslogin.v1.UserName;
 import com.google.cloud.oslogin.v1.stub.OsLoginServiceStub;
 import com.google.cloud.oslogin.v1.stub.OsLoginServiceStubSettings;
 import com.google.protobuf.Empty;
@@ -87,8 +87,7 @@ import javax.annotation.Generated;
  *
  * <p>Please refer to the GitHub repository's samples for more quickstart code snippets.
  */
-@BetaApi
-@Generated("by gapic-generator")
+@Generated("by gapic-generator-java")
 public class OsLoginServiceClient implements BackgroundResource {
   private final OsLoginServiceSettings settings;
   private final OsLoginServiceStub stub;
