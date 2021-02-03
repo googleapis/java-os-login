@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-os-login.git",
-        "sha": "ca1c216591675aef54653ac26f77bc54ae29efeb"
+        "sha": "41d144a8284544c29da32071498e868bd15b07dc"
       }
     },
     {
@@ -134,6 +134,7 @@
     "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/OsLoginProto.java",
     "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/UpdateSshPublicKeyRequest.java",
     "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/UpdateSshPublicKeyRequestOrBuilder.java",
+    "proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/UserName.java",
     "proto-google-cloud-os-login-v1/src/main/proto/google/cloud/oslogin/common/common.proto",
     "proto-google-cloud-os-login-v1/src/main/proto/google/cloud/oslogin/v1/oslogin.proto",
     "renovate.json",
