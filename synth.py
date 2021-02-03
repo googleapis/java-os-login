@@ -13,8 +13,6 @@
 # limitations under the License.
 
 """This script is used to synthesize generated parts of this library."""
-# Copy of Resource name helper classes from v1 and import replacements
-# will be removed before next major release
 
 import synthtool as s
 import synthtool.languages.java as java
@@ -32,6 +30,9 @@ for version in versions:
       bazel_target=f'//google/cloud/{service}/{version}:google-cloud-{service}-{version}-java',
       destination_name='os-login',
   )
+
+  # Copy of Resource name helper classes from v1 and import replacements
+  # will be removed before next major release(lines 36 - 60)gi
   shutil.copy(
       'proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/common/UserName.java',
       'proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/UserName.java')
@@ -39,32 +40,32 @@ for version in versions:
       'proto-google-cloud-os-login-v1/src/main/java/com/google/cloud/oslogin/v1/UserName.java',
       'package com.google.cloud.oslogin.common;',
       'package com.google.cloud.oslogin.v1;')
+  s.replace('**/OsLoginServiceClient.java',
+            'import com.google.cloud.oslogin.common.FingerprintName;',
+            'import com.google.cloud.oslogin.v1.FingerprintName;')
+  s.replace('**/OsLoginServiceClient.java',
+            'import com.google.cloud.oslogin.common.UserName;',
+            'import com.google.cloud.oslogin.v1.UserName;')
+  s.replace('**/OsLoginServiceClient.java',
+            'import com.google.cloud.oslogin.common.ProjectName;',
+            'import com.google.cloud.oslogin.v1.ProjectName;')
+  s.replace('**/OsLoginServiceClientTest.java',
+            'import com.google.cloud.oslogin.common.FingerprintName;',
+            'import com.google.cloud.oslogin.v1.FingerprintName;')
+  s.replace('**/OsLoginServiceClientTest.java',
+            'import com.google.cloud.oslogin.common.UserName;',
+            'import com.google.cloud.oslogin.v1.UserName;')
+  s.replace('**/OsLoginServiceClientTest.java',
+            'import com.google.cloud.oslogin.common.ProjectName;',
+            'import com.google.cloud.oslogin.v1.ProjectName;')
 
   s.replace('**/OsLoginServiceClient.java', 'PosixAccountName', 'ProjectName')
   s.replace('**/OsLoginServiceClient.java', 'SshPublicKeyName',
             'FingerprintName')
-  s.replace('**/OsLoginServiceClient.java',
-            'import com.google.cloud.oslogin.common.FingerprintName;',
-            'import com.google.cloud.oslogin.v1.FingerprintName;')
-  s.replace('**/OsLoginServiceClient.java',
-            'import com.google.cloud.oslogin.common.UserName;',
-            'import com.google.cloud.oslogin.v1.UserName;')
-  s.replace('**/OsLoginServiceClient.java',
-            'import com.google.cloud.oslogin.common.ProjectName;',
-            'import com.google.cloud.oslogin.v1.ProjectName;')
   s.replace('**/OsLoginServiceClientTest.java', 'PosixAccountName',
             'ProjectName')
   s.replace('**/OsLoginServiceClientTest.java', 'SshPublicKeyName',
             'FingerprintName')
-  s.replace('**/OsLoginServiceClientTest.java',
-            'import com.google.cloud.oslogin.common.FingerprintName;',
-            'import com.google.cloud.oslogin.v1.FingerprintName;')
-  s.replace('**/OsLoginServiceClientTest.java',
-            'import com.google.cloud.oslogin.common.UserName;',
-            'import com.google.cloud.oslogin.v1.UserName;')
-  s.replace('**/OsLoginServiceClientTest.java',
-            'import com.google.cloud.oslogin.common.ProjectName;',
-            'import com.google.cloud.oslogin.v1.ProjectName;')
 
   java.format_code(f'google-cloud-os-login/src')
   java.format_code(f'grpc-google-cloud-{service}-{version}/src')
