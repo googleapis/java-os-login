@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://www.github.com/googleapis/java-os-login/compare/v1.3.1...v1.4.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#506](https://www.github.com/googleapis/java-os-login/issues/506)) ([9f30c1a](https://www.github.com/googleapis/java-os-login/commit/9f30c1a9afe03ef3ba9740f80afa18b64dfd1736))
+
 ### [1.3.1](https://www.github.com/googleapis/java-os-login/compare/v1.3.0...v1.3.1) (2021-07-05)
 
 
