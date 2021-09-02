@@ -31,7 +31,7 @@ jobs:
       env:
         JOB_TYPE: test
   dependencies:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-16.04
     strategy:
       matrix:
         java: [8, 11]
