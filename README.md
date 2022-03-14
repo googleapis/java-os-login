@@ -41,7 +41,7 @@ If you are using Maven without BOM, add this to your dependencies:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-os-login</artifactId>
-  <version>2.0.8</version>
+  <version>2.0.12</version>
 </dependency>
 
 ```
@@ -49,7 +49,7 @@ If you are using Maven without BOM, add this to your dependencies:
 If you are using Gradle 5.x or later, add this to your dependencies
 
 ```Groovy
-implementation platform('com.google.cloud:libraries-bom:24.4.0')
+implementation platform('com.google.cloud:libraries-bom:25.0.0')
 
 implementation 'com.google.cloud:google-cloud-os-login'
 ```
