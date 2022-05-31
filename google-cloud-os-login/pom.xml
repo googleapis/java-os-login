@@ -122,8 +122,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <argLine>--add-opens=java.base/java.time=ALL-UNNAMED
-            --add-opens=java.base/java.math=ALL-UNNAMED 
-            --add-opens=java.base/sun.security.rsa=ALL-UNNAMED</argLine>
+            --add-opens=java.base/java.math=ALL-UNNAMED
+            --add-opens=java.base/sun.security.rsa=ALL-UNNAMED
+            --add-opens=java.base/sun.security.pkcs=ALL-UNNAMED</argLine>
         </configuration>
       </plugin>
         </plugins>
