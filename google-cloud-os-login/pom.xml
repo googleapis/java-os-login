@@ -124,7 +124,8 @@
           <argLine>--add-opens=java.base/java.time=ALL-UNNAMED
             --add-opens=java.base/java.math=ALL-UNNAMED
             --add-opens=java.base/sun.security.rsa=ALL-UNNAMED
-            --add-opens=java.base/sun.security=ALL-UNNAMED</argLine>
+            --add-opens=java.base/sun.security.pkcs=ALL-UNNAMED
+            --add-opens=java.base/sun.security.x509=ALL-UNNAMED</argLine>
         </configuration>
       </plugin>
         </plugins>
