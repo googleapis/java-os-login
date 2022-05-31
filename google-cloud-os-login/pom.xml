@@ -126,7 +126,8 @@
             --add-opens=java.base/sun.security.rsa=ALL-UNNAMED
             --add-opens=java.base/sun.security.pkcs=ALL-UNNAMED
             --add-opens=java.base/sun.security.x509=ALL-UNNAMED
-            --add-opens=java.base/sun.security.util=ALL-UNNAMED</argLine>
+            --add-opens=java.base/sun.security.util=ALL-UNNAMED
+            --add-opens=java.base/java.security=ALL-UNNAMED</argLine>
         </configuration>
       </plugin>
         </plugins>
