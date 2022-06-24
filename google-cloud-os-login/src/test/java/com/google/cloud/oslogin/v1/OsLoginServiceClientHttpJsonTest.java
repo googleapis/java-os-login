@@ -26,9 +26,6 @@ import com.google.api.gax.rpc.InvalidArgumentException;
 import com.google.api.gax.rpc.StatusCode;
 import com.google.api.gax.rpc.testing.FakeStatusCode;
 import com.google.cloud.oslogin.common.OsLoginProto;
-import com.google.cloud.oslogin.common.PosixAccountName;
-import com.google.cloud.oslogin.common.SshPublicKeyName;
-import com.google.cloud.oslogin.common.UserName;
 import com.google.cloud.oslogin.v1.stub.HttpJsonOsLoginServiceStub;
 import com.google.protobuf.Empty;
 import com.google.protobuf.FieldMask;
@@ -84,7 +81,7 @@ public class OsLoginServiceClientHttpJsonTest {
     Empty expectedResponse = Empty.newBuilder().build();
     mockService.addResponse(expectedResponse);
 
-    PosixAccountName name = PosixAccountName.of("[USER]", "[PROJECT]");
+    ProjectName name = ProjectName.of("[USER]", "[PROJECT]");
 
     client.deletePosixAccount(name);
 
@@ -111,7 +108,7 @@ public class OsLoginServiceClientHttpJsonTest {
     mockService.addException(exception);
 
     try {
-      PosixAccountName name = PosixAccountName.of("[USER]", "[PROJECT]");
+      ProjectName name = ProjectName.of("[USER]", "[PROJECT]");
       client.deletePosixAccount(name);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
@@ -164,7 +161,7 @@ public class OsLoginServiceClientHttpJsonTest {
     Empty expectedResponse = Empty.newBuilder().build();
     mockService.addResponse(expectedResponse);
 
-    SshPublicKeyName name = SshPublicKeyName.of("[USER]", "[FINGERPRINT]");
+    FingerprintName name = FingerprintName.of("[USER]", "[FINGERPRINT]");
 
     client.deleteSshPublicKey(name);
 
@@ -191,7 +188,7 @@ public class OsLoginServiceClientHttpJsonTest {
     mockService.addException(exception);
 
     try {
-      SshPublicKeyName name = SshPublicKeyName.of("[USER]", "[FINGERPRINT]");
+      FingerprintName name = FingerprintName.of("[USER]", "[FINGERPRINT]");
       client.deleteSshPublicKey(name);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
@@ -338,11 +335,11 @@ public class OsLoginServiceClientHttpJsonTest {
             .setKey("key106079")
             .setExpirationTimeUsec(-2058878882)
             .setFingerprint("fingerprint-1375934236")
-            .setName(SshPublicKeyName.of("[USER]", "[FINGERPRINT]").toString())
+            .setName(FingerprintName.of("[USER]", "[FINGERPRINT]").toString())
             .build();
     mockService.addResponse(expectedResponse);
 
-    SshPublicKeyName name = SshPublicKeyName.of("[USER]", "[FINGERPRINT]");
+    FingerprintName name = FingerprintName.of("[USER]", "[FINGERPRINT]");
 
     OsLoginProto.SshPublicKey actualResponse = client.getSshPublicKey(name);
     Assert.assertEquals(expectedResponse, actualResponse);
@@ -370,7 +367,7 @@ public class OsLoginServiceClientHttpJsonTest {
     mockService.addException(exception);
 
     try {
-      SshPublicKeyName name = SshPublicKeyName.of("[USER]", "[FINGERPRINT]");
+      FingerprintName name = FingerprintName.of("[USER]", "[FINGERPRINT]");
       client.getSshPublicKey(name);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
@@ -385,7 +382,7 @@ public class OsLoginServiceClientHttpJsonTest {
             .setKey("key106079")
             .setExpirationTimeUsec(-2058878882)
             .setFingerprint("fingerprint-1375934236")
-            .setName(SshPublicKeyName.of("[USER]", "[FINGERPRINT]").toString())
+            .setName(FingerprintName.of("[USER]", "[FINGERPRINT]").toString())
             .build();
     mockService.addResponse(expectedResponse);
 
@@ -622,11 +619,11 @@ public class OsLoginServiceClientHttpJsonTest {
             .setKey("key106079")
             .setExpirationTimeUsec(-2058878882)
             .setFingerprint("fingerprint-1375934236")
-            .setName(SshPublicKeyName.of("[USER]", "[FINGERPRINT]").toString())
+            .setName(FingerprintName.of("[USER]", "[FINGERPRINT]").toString())
             .build();
     mockService.addResponse(expectedResponse);
 
-    SshPublicKeyName name = SshPublicKeyName.of("[USER]", "[FINGERPRINT]");
+    FingerprintName name = FingerprintName.of("[USER]", "[FINGERPRINT]");
     OsLoginProto.SshPublicKey sshPublicKey = OsLoginProto.SshPublicKey.newBuilder().build();
 
     OsLoginProto.SshPublicKey actualResponse = client.updateSshPublicKey(name, sshPublicKey);
@@ -655,7 +652,7 @@ public class OsLoginServiceClientHttpJsonTest {
     mockService.addException(exception);
 
     try {
-      SshPublicKeyName name = SshPublicKeyName.of("[USER]", "[FINGERPRINT]");
+      FingerprintName name = FingerprintName.of("[USER]", "[FINGERPRINT]");
       OsLoginProto.SshPublicKey sshPublicKey = OsLoginProto.SshPublicKey.newBuilder().build();
       client.updateSshPublicKey(name, sshPublicKey);
       Assert.fail("No exception raised");
@@ -671,7 +668,7 @@ public class OsLoginServiceClientHttpJsonTest {
             .setKey("key106079")
             .setExpirationTimeUsec(-2058878882)
             .setFingerprint("fingerprint-1375934236")
-            .setName(SshPublicKeyName.of("[USER]", "[FINGERPRINT]").toString())
+            .setName(FingerprintName.of("[USER]", "[FINGERPRINT]").toString())
             .build();
     mockService.addResponse(expectedResponse);
 
@@ -720,11 +717,11 @@ public class OsLoginServiceClientHttpJsonTest {
             .setKey("key106079")
             .setExpirationTimeUsec(-2058878882)
             .setFingerprint("fingerprint-1375934236")
-            .setName(SshPublicKeyName.of("[USER]", "[FINGERPRINT]").toString())
+            .setName(FingerprintName.of("[USER]", "[FINGERPRINT]").toString())
             .build();
     mockService.addResponse(expectedResponse);
 
-    SshPublicKeyName name = SshPublicKeyName.of("[USER]", "[FINGERPRINT]");
+    FingerprintName name = FingerprintName.of("[USER]", "[FINGERPRINT]");
     OsLoginProto.SshPublicKey sshPublicKey = OsLoginProto.SshPublicKey.newBuilder().build();
     FieldMask updateMask = FieldMask.newBuilder().build();
 
@@ -755,7 +752,7 @@ public class OsLoginServiceClientHttpJsonTest {
     mockService.addException(exception);
 
     try {
-      SshPublicKeyName name = SshPublicKeyName.of("[USER]", "[FINGERPRINT]");
+      FingerprintName name = FingerprintName.of("[USER]", "[FINGERPRINT]");
       OsLoginProto.SshPublicKey sshPublicKey = OsLoginProto.SshPublicKey.newBuilder().build();
       FieldMask updateMask = FieldMask.newBuilder().build();
       client.updateSshPublicKey(name, sshPublicKey, updateMask);
@@ -772,7 +769,7 @@ public class OsLoginServiceClientHttpJsonTest {
             .setKey("key106079")
             .setExpirationTimeUsec(-2058878882)
             .setFingerprint("fingerprint-1375934236")
-            .setName(SshPublicKeyName.of("[USER]", "[FINGERPRINT]").toString())
+            .setName(FingerprintName.of("[USER]", "[FINGERPRINT]").toString())
             .build();
     mockService.addResponse(expectedResponse);
 
