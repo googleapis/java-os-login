@@ -4,7 +4,7 @@
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-os-login-parent</artifactId>
   <packaging>pom</packaging>
-  <version>2.2.3-SNAPSHOT</version><!-- {x-version-update:google-cloud-os-login:current} -->
+  <version>2.2.4-SNAPSHOT</version><!-- {x-version-update:google-cloud-os-login:current} -->
   <name>Google Cloud OS Login Parent</name>
   <url>https://github.com/googleapis/java-os-login</url>
   <description>
@@ -61,17 +61,17 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-os-login-v1</artifactId>
-        <version>2.2.3-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-os-login-v1:current} -->
+        <version>2.2.4-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-os-login-v1:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-os-login-v1</artifactId>
-        <version>2.2.3-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-os-login-v1:current} -->
+        <version>2.2.4-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-os-login-v1:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-os-login</artifactId>
-        <version>2.2.3-SNAPSHOT</version><!-- {x-version-update:google-cloud-os-login:current} -->
+        <version>2.2.4-SNAPSHOT</version><!-- {x-version-update:google-cloud-os-login:current} -->
       </dependency>
 
       <dependency>
@@ -120,7 +120,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.4.0</version>
+        <version>3.4.1</version>
         <reportSets>
           <reportSet>
             <reports>
@@ -147,7 +147,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.4.0</version>
+        <version>3.4.1</version>
         <reportSets>
           <reportSet>
             <id>html</id>
