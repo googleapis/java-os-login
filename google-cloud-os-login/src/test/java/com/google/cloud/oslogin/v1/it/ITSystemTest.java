@@ -72,7 +72,12 @@ public class ITSystemTest {
     GoogleCredentials credentials =
         GoogleCredentials.getApplicationDefault().createScoped(GOOGLE_API_CLOUD_PLATFORM_LINK);
     JsonObject jsonObject = GSON.fromJson(GSON.toJson(credentials), JsonObject.class);
-    return jsonObject.get(key).toString().replaceAll(REGEXP, "");
+    String value = jsonObject.get(key).toString();
+    if (GOOGLE_API_CLIENT_EMAIL_ID.equals(key) || GOOGLE_API_CLIENT_ID.equals(key)) {
+      // Ensure to print known values only
+      System.out.println("key: " + key + ", value: "+ value);
+    }
+    return value.replaceAll(REGEXP, "");
   }
 
   @Test
