@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.7](https://github.com/googleapis/java-os-login/compare/v2.2.6...v2.2.7) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([687833d](https://github.com/googleapis/java-os-login/commit/687833da5d0797464016a985a85c07519aa1ffc3))
+
 ## [2.2.6](https://github.com/googleapis/java-os-login/compare/v2.2.5...v2.2.6) (2022-10-03)
 
 
