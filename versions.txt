@@ -1,6 +1,0 @@
-# Format:
-# module:released-version:current-version
-
-google-cloud-os-login:2.2.7:2.2.7
-grpc-google-cloud-os-login-v1:2.2.7:2.2.7
-proto-google-cloud-os-login-v1:2.2.7:2.2.7
